@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<ImageButton -->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="#CC000000"-->
+        <!--/>-->
+
+    <!--<ImageButton -->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="#CC000000"-->
+        <!--style="@style/ExoMediaButton.Pause"/>-->
+
+    <RelativeLayout
+      android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@id/exo_progress"
+            android:layout_width="match_parent"
+app:ad_marker_color="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            app:unplayed_color="@color/colorPrimaryDark"
+            app:buffered_color="@color/colorAccent"
+            android:layout_height="26dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@id/exo_play"
+            android:layout_width="50dp"
+
+          android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:clickable="true"
+            style="@style/ExoMediaButton.Play"
+            app:fabSize="auto"
+            app:srcCompat="@color/colorAccent" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@id/exo_pause"
+            android:layout_width="50dp"
+
+            android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:clickable="true"
+        style="@style/ExoMediaButton.Pause"
+            app:fabSize="auto"
+            app:srcCompat="@color/colorAccent" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:id="@+id/idme"
+
+            app:fabSize="auto"
+            app:srcCompat="@color/colorAccent" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/exo_fullscreen_icon"
+
+            app:fabSize="auto"
+            app:srcCompat="@color/colorAccent"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
